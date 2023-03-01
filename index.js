@@ -1,5 +1,7 @@
+const cors = require("cors");
 const express = require("express");
 const app = express();
+app.use(cors());
 
 require("./startup/routes")(app);
 require("./startup/logging");
